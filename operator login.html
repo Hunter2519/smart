@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Ticket book</title>
+		<style type="text/css">
+			*
+			{
+				margin:0px;
+				padding:0px;
+				font-family:Times New Roman;
+				box-sizing:border-box;
+			}
+			#logo-div
+			{
+				width:100%;
+				min-height:100px;
+				margin-bottom:10px;
+			}
+			#leftlogo-div
+			{
+				width:20%;
+				min-height:100px;
+				float:left;
+			}
+			#centerlogo-div
+			{
+				width:50%;
+				min-height:100px;
+				float:left;
+				padding-left:17%;
+			}
+			#rightlogo-div
+			{
+				width:20%;
+				min-height:100px;
+				float:right;
+				padding-left:8%;
+			}
+			#header-div
+			{
+				width:100%;
+				min-height:40px;
+				background-color:#990000;
+				margin-bottom:150px;
+			}
+			#home-div
+			{
+				color:white;
+				line-height:40px;
+				padding-left:2%;
+				float:left;
+			}
+			#about-div
+			{
+				color:white;
+				line-height:40px;
+				padding-left:2%;
+				float:left;	
+			}
+			a:link
+			 {
+				  color: white;
+				  background-color: transparent;
+  				  text-decoration: none;
+			}
+			a:visited 
+			{
+  				color: white;
+				background-color: transparent;
+  				text-decoration: none;
+			}
+			a:hover {
+  				color:#FFFF66;
+  				background-color: transparent;
+  				text-decoration: underline;
+			}
+			a:active 
+			{
+ 				color:white;
+  				background-color: transparent;
+				text-decoration: underline;
+			}
+			#terms-div
+			{
+				color:white;
+				line-height:40px;
+				padding-left:2%;
+				float:left;	
+			}
+			#contact-div
+			{
+				color:white;
+				line-height:40px;
+				padding-left:2%;
+				float:left;	
+			}
+			#operator-div
+			{
+				color:white;
+				line-height:40px;
+				padding-right:2%;
+				float:right;	
+			}
+			#login-div
+			{
+				color:white;
+				line-height:40px;
+				padding-right:2%;
+				float:right;	
+			}
+			#left-div
+			{
+				width:50%;
+				min-height:150px;
+				float:left;
+			}
+			#right-div
+			{
+				width:50%;
+				min-height:150px;
+				float:right;
+			}
+			#log-div
+			{
+				width:100%;
+				margin-left:25%;
+			}
+			#time-div
+			{
+				width:30%;
+				min-height:50px;
+				background-color:#990000;
+				color:white;
+				line-height:40px;
+				text-align:center;
+				margin-left:25%;
+				margin-bottom:10px;
+				border-radius: 20px;
+			}
+			#short-div
+			{
+				width:30%;
+				min-height:50px;
+				background-color:#990000;
+				color:white;
+				line-height:40px;
+				text-align:center;
+				margin-left:25%;
+				margin-bottom:10px;	
+				border-radius: 20px;
+			}
+			#long-div
+			{
+				width:30%;
+				min-height:50px;
+				background-color:#990000;
+				color:white;
+				line-height:40px;
+				text-align:center;
+				margin-left:25%;
+				border-radius: 20px;	
+			}
+			#long-div:hover
+			{
+				cursor:pointer;
+				color:#FFFF66;	
+			}
+			#time-div:hover
+			{
+				cursor:pointer;
+				color:#FFFF66;	
+			}
+			#short-div:hover
+			{
+				cursor:pointer;
+				color:#FFFF66;	
+			}
+			
+			#login-div:hover
+			{
+				cursor:pointer;
+				color:#FFFF66;	
+			}
+			#operator-div:hover
+			{
+				cursor:pointer;
+				color:#FFFF66;	
+			}
+			.loginbox
+			{
+				width:300px;
+				height:400px;
+				background:white;
+				top:60%;
+				left:75%;
+				position:absolute;
+				background:#990000;
+				transform:translate(-50%,-50%);
+				box-sizing:border-box;
+				padding: 70px 30px;	
+				border-radius:20px;	
+			}
+			h1
+			{
+				margin:0;
+				color: white;
+				padding:0 0 20px;
+				text-align:center;
+				font-size: 22px;
+			}
+			.loginbox p{
+				margin:0 ;
+				padding: 0;
+				color: white;
+				font-weight: bold;
+			}
+			.loginbox input{
+				width: 100%;
+				margin-bottom: 20px;
+			}
+			.loginbox input[type="text"],input[type="password"]
+			{
+				border: none;
+				border-bottom:1px solid #000;
+				outline: none;
+				height : 30px;
+				font-size: 16px;
+			}
+			.loginbox input[type="submit"]
+			{
+				border: none;
+				outline: none:
+				height: 40px;
+				background:#333399;
+				color: #fff;
+				font-size:18px;
+				border-radius: 20px;
+			}
+			.loginbox input[type="submit"]:hover
+			{
+				cursor: pointer;	
+				color:#FFFF66;
+			}
+			.loginbox a
+			{
+				text-decoration:none;
+				color:white;
+				font-size:12px;
+				line-height:20px;
+			}
+			.loginbox a:hover
+			{
+				cursor:pointer;
+				color:#FFFF66;	
+			}
+			.clearfix::after
+			{
+				content:"";
+				display:block;
+				clear:both;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="logo-div" class="clearfix">
+			<div id="leftlogo-div">
+				<img src="https://www.tnstc.in/images/tnstc_header01.jpg">
+			</div>
+			<div id="centerlogo-div">
+				<img src="https://www.tnstc.in/images/tnstc_header02.jpg">
+			</div>
+			<div id="rightlogo-div">
+				<img src="https://www.tnstc.in/images/tnstc_header03.jpg">
+			</div>
+		</div>
+		<div id="header-div" class="clearfix">
+			<div id="home-div">
+				<a href="file:///C:/Users/ARAEVIND/Desktop/Ticket%20%20book.html?">Home</a>
+			</div>
+			<div id="about-div">
+				<a href="https://www.tnstc.in/innerHtmls/aboutus.html">About us</a>
+			</div>
+			<div id="terms-div">
+				<a href="https://www.tnstc.in/innerHtmls/terms.html">Terms & Conditions</a>
+			</div>
+			<div id="contact-div">
+				<a href="https://www.tnstc.in/innerHtmls/contactus.html">Contact us</a>
+			</div>
+			<div id="operator-div">
+				<a href="file:///G:/Project%202/operator%20login.html">Operator Login</a>
+			</div>
+			<div id="login-div">
+				<a href="file:///G:/Project%202/Ticket%20%20book.html">User Login</a>
+			</div>	
+		</div>
+		<div id="main-div"  class="clearfix">
+			<div id="left-div">
+				<div id="time-div">
+					Local Bus Schedule
+				</div>
+				<div id="short-div">
+					Short Distance Reservation
+				</div>
+				<div id="long-div">
+					Long Distance Reservation
+				</div>
+			</div>
+			<div id="right-div">
+				<div class="loginbox">
+					<h1>Operator Login</h1>
+					<form>
+						<p>Username</p>
+						<input type="text" name="" placeholder="Enter Username">
+						<p>Password</p>
+						<input type="password" name="" placeholder="Enter Password">
+						<input type="submit" name="" value="Login">
+						<a herf="#">Forgot your password?</a><br>
+					</form>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
+
